@@ -1,5 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { PeazeSDK, SupportedNetwork } from "@peaze-labs/react";
+
+const peaze = new PeazeSDK({
+  id: "PROJECT_ID_HERE",
+  key: "PROJECT_KEY_HERE",
+  network: {
+    chainId: SupportedNetwork.PolygonMumbai,
+  },
+});
 
 function App() {
   return (
